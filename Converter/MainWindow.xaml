@@ -1,0 +1,22 @@
+﻿<Window x:Class="Converter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Converter"
+        mc:Ignorable="d"
+        Title="Конвертер" Height="350" Width="525">
+    <Grid>
+        <TextBox Height="131" HorizontalAlignment="Left" Margin="6,6,0,0"
+             Name="SelectedFileTextBox" VerticalAlignment="Top" Width="401"/>
+        <Button Content="Выбрать" Height="30" HorizontalAlignment="Right" Margin="0,6,10,0"
+            Name="BrowseButton" VerticalAlignment="Top" Width="85" Click="BrowseButton_Click" FontSize="14" />
+        <ProgressBar Name ="progressBar" IsIndeterminate="False" HorizontalAlignment="Left" Height="42" Margin="0,259,0,0" VerticalAlignment="Top" Width="517"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Margin="6,198,10,0" TextWrapping="Wrap" Width="501" FontSize="18" VerticalAlignment="Top" TextAlignment="Center"><Run Language="ru-ru" Text="Выберите один или более файлов "/><Run Text=".doc "/><Run Language="ru-ru" Text="или "/><Run Text=".docx"/><LineBreak/><Run Language="ru-ru" Text="У вас должен быть установлен "/><Run Text="Microsoft Word"/></TextBlock>
+        <Label Content="Выберите конечный шрифт:" HorizontalAlignment="Left" Margin="21,167,0,0" VerticalAlignment="Top" Width="169"/>
+        <ComboBox Name ="comboBox" HorizontalAlignment="Left" Margin="195,171,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged">
+            <ComboBoxItem Content ="PT Sans"></ComboBoxItem>
+            <ComboBoxItem Content ="PT Serif"></ComboBoxItem>
+        </ComboBox>
+    </Grid>
+</Window>
