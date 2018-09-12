@@ -15,7 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.IO;
-using Word = Microsoft.Office.Interop.Word;
+using Word = Microsoft.Office.Interop.Word; //
 
 namespace Converter
 {
